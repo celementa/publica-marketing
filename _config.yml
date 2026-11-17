@@ -1,0 +1,9 @@
+# Общие настройки сайта (site-wide settings)
+site_url: "https://marketing.publica.kg"   # main domain, no trailing slash
+site_name: "publica Marketing Services"
+locale: "ru_RU"
+default_image: "/assets/og-image.jpg"
+gtm_id: "GTM-M3JXG7PP"                        # same GTM container as publica.kg
+
+exclude:
+  - README.md

@@ -1,0 +1,14 @@
+# ВСЕ МЕТА-ДАННЫЕ САЙТА — same format as publica.kg (_data/seo.yml there)
+index.html:
+  path: "/"
+  title: "publica Marketing Services — цифровой маркетинг для государства"
+  description: "Сайты и порталы, SEO и ИИ-поиск, реклама в Google и Meta, креатив и дизайн для министерств и ведомств Кыргызстана. Бесплатный экспресс-аудит."
+  image: ""
+  noindex: false
+
+contact.html:
+  path: "/contact"
+  title: "Связаться с publica Marketing Services — бесплатный экспресс-аудит"
+  description: "Оставьте заявку на бесплатный экспресс-аудит сайта, портала или кампании. Предложим пакет под задачу ведомства. Бишкек · Париж."
+  image: ""
+  noindex: false
