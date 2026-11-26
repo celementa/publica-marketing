@@ -22,7 +22,7 @@ const home=document.body.dataset.page==='home';
 const H=home?'':'/';
 
 /* ---------- header ---------- */
-const nav=[['Услуги',H+'#services'],['Министерствам',H+'#ministries'],['Пакеты',H+'#packages'],['Результаты',H+'#results'],['Как работаем',H+'#process'],['publica.kg ↗','https://publica.kg/']];
+const nav=[['Услуги',H+'#services'],['Отрасли',H+'#ministries'],['Пакеты',H+'#packages'],['Результаты',H+'#results'],['Как работаем',H+'#process'],['publica.kg ↗','https://publica.kg/']];
 const hdr=$('#site-header');
 if(hdr){
   const cur=document.body.dataset.nav||'';
@@ -51,7 +51,7 @@ const ftr=$('#site-footer');
 if(ftr) ftr.outerHTML=`<footer class="ftr"><div class="wrap">
   <div class="ftr__top">
    <div><a class="logo" href="/">${LOGO}</a><p>publica Marketing Services — последняя миля цифровой трансформации: делаем так, чтобы цифровыми сервисами пользовались.</p></div>
-   <div><h6>Разделы</h6><ul><li><a href="/#services">Услуги</a></li><li><a href="/#ministries">Министерствам</a></li><li><a href="/#packages">Пакеты</a></li><li><a href="/#results">Результаты</a></li><li><a href="/contact">Контакты</a></li></ul></div>
+   <div><h6>Разделы</h6><ul><li><a href="/#services">Услуги</a></li><li><a href="/#ministries">Отрасли</a></li><li><a href="/#packages">Пакеты</a></li><li><a href="/#results">Результаты</a></li><li><a href="/contact">Контакты</a></li></ul></div>
    <div><h6>Направления</h6><ul><li><a href="https://publica.kg/">IT-сервисы</a></li><li><a href="/">Маркетинг</a></li><li><a href="https://pay.publica.kg/">PublicaPay</a></li></ul></div>
    <div><h6>Компания</h6><ul><li><a href="https://publica.kg/">publica.kg</a></li><li><a href="https://publica.kg/team">Команда</a></li><li><a href="https://publica.kg/cases">Проекты</a></li><li><a href="https://publica.kg/insights">Аналитика</a></li></ul></div>
    <div><h6>Правовая информация</h6><ul><li><a href="#">Политика конфиденциальности</a></li><li><a href="#">Условия использования</a></li></ul></div>
