@@ -9,27 +9,29 @@
 <link rel="stylesheet" href="site.css">
 <link rel="stylesheet" href="mkt.css">
 </head>
-<body>
+<body data-solid="1">
 {% include gtm-body.html %}
 <script>document.body.dataset.page='home';</script>
 
 <div id="site-header"></div>
 
 <!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero__bg" style="background-image:url('assets/gov-new-wide.jpg')"></div>
-  <div class="hero__glow" aria-hidden="true"></div>
-  <div class="wrap hero__in">
-    <div class="ticker"><span class="ticker__bar"></span>
-      <div class="ticker__win"><div class="ticker__list"><span>Министерства</span><span>Финансовые институты</span><span>Туризм</span><span>Министерства</span></div></div>
+<section class="mh" id="top">
+  <div class="wrap mh__in">
+    <div class="mh__txt">
+      <span class="pill mh__tag">Маркетинговое агентство · Бишкек</span>
+      <h1 class="mh__h" id="heroH">Делаем так, чтобы цифровыми сервисами <em>пользовались.</em></h1>
+      <p class="lead mh__lead">Бренд, сайт, контент, реклама и аналитика для министерств и финансовых институтов Кыргызстана. Одна команда, результат в заявках и записях.</p>
+      <div class="mh__cta"><a class="btn" href="/contact"><span class="btn__dot"></span>Запросить аудит</a><a class="lnk" href="#services">Смотреть услуги</a></div>
     </div>
-    <h1 class="h-xl" id="heroH">Делаем так, чтобы цифровыми сервисами пользовались.</h1>
-    <div class="hero__row">
-      <p class="lead">Маркетинговое агентство для государства и финансовых институтов Кыргызстана. Бренд, сайт, контент, реклама и аналитика делает одна команда.</p>
-      <a class="btn btn--light" href="/contact"><span class="btn__dot"></span>Запросить аудит</a>
+    <div class="mh__art">
+      <picture><source type="image/webp" srcset="assets/hero-people-640.webp 640w, assets/hero-people-1024.webp 1024w" sizes="(max-width:960px) 90vw, 40vw"><img class="mh__photo" src="assets/hero-people-1024.jpg" srcset="assets/hero-people-640.jpg 640w, assets/hero-people-1024.jpg 1024w" sizes="(max-width:960px) 90vw, 40vw" width="1024" height="1280" alt="Девушка с улыбкой смотрит в смартфон на улице Бишкека на фоне гор" fetchpriority="high"></picture>
+      <div class="mh__card mh__ad" aria-hidden="true"><span class="mh__lbl">Реклама</span><b>Туры на Иссык-Куль</b><span class="mh__url">Национальный туристический портал</span></div>
+      <div class="mh__card mh__ai" aria-hidden="true"><span class="mh__chip">Ответ ИИ</span><p>Лучшее время для Каракола: январь–март для лыж, июль–август для треккинга.</p><span class="mh__src"><i></i><i></i><i></i>3 источника</span></div>
+      <div class="mh__card mh__chart" aria-hidden="true"><span class="mh__lbl">Онлайн-заявки</span><svg viewBox="0 0 160 56"><path d="M0 50 L22 46 L44 47 L66 38 L88 34 L110 24 L132 18 L160 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <span class="mh__dot" aria-hidden="true"></span>
     </div>
   </div>
-  <div class="scroll-cue" aria-hidden="true"></div>
 </section>
 
 <!-- MARQUEE -->
@@ -301,8 +303,6 @@
 <script src="site.js"></script>
 <script>
 (function(){
-  const h=document.getElementById('heroH');
-  h.innerHTML=h.textContent.trim().split(/\s+/).map((w,i)=>`<span class="w"><span style="animation-delay:${.15+i*.06}s">${w}</span></span>`).join(' ');
   PUBinit();
   const tabs=[...document.querySelectorAll('[role=tab]')],panels=tabs.map(t=>document.getElementById(t.getAttribute('aria-controls')));
   const show=(i,focus)=>{tabs.forEach((t,j)=>{const on=i===j;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;panels[j].hidden=!on;});if(focus)tabs[i].focus();};
